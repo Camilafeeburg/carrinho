@@ -1,0 +1,29 @@
+.box1{
+    width: 260px;
+    height: 370px;
+    display: block;
+    background-color: rgb(153, 99, 203);
+    float: left;
+    margin-left: 40px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.tex1{
+    width: 100%;
+    text-align: center;
+
+}
+
+.img1{
+    height: 250px;
+    width: 250px;
+}
+.botao{
+    height: 30px;
+    width: 70px;
+    margin-left: 50px;
+}
+.preco{
+    display: block;
+    float: left;
+}

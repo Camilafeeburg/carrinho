@@ -7,6 +7,11 @@
     margin-left: 40px;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+}
+#titulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
 }
 .tex1{
     width: 100%;
@@ -19,11 +24,47 @@
     width: 250px;
 }
 .botao{
-    height: 30px;
-    width: 70px;
-    margin-left: 50px;
+    display: block;
+    float: left;
+    margin-top: -10px;
+    background-color: rgb(147, 91, 147);
+    color: white;
 }
 .preco{
     display: block;
     float: left;
+    
 }
+.container-preco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#btnAbrirCarrinho {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(153, 99, 203);;
+    
+}
+#btnFecharCarrinho {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    
+}
+#carrinho {
+    position: fixed;
+    right: -450px;
+    top: 0;
+    height: 100%;
+    width: 450px;
+    background-color: white;    
+}
+.icon{
+    height: 40px;
+    width: 40px;
+}
+
+

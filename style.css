@@ -1,3 +1,6 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .box1{
     width: 260px;
     height: 370px;
@@ -52,6 +55,9 @@
     position: absolute;
     right: 10px;
     top: 10px;
+    background-color: rgb(153, 99, 203);
+    height: 30px;
+    width: 30px;
     
 }
 #carrinho {
@@ -60,11 +66,47 @@
     top: 0;
     height: 100%;
     width: 450px;
-    background-color: white;    
+    background-color: rgb(122, 115, 124);    
 }
 .icon{
     height: 40px;
     width: 40px;
 }
+#listaCarrinho{
+    height: auto;
+    width: 100%;
+    background-color: white;
+    list-style-type: none;
+}
+#listaCarrinho .produto1{
+    width: 100%;
+    display: block;
+    float: left;
+    margin: 9px 0;
+    background-color: rgb(255, 255, 255);
+}
 
+#listaCarrinho .produto1 img{
+    width: 90px;
+    margin: 0;
+    display: block;
+    float: left;
+}
 
+#listaCarrinho .produto1 p{
+    width: 250px;
+    margin-top: 20px;
+    float: left;
+    display: block
+}
+#listaCarrinho .produto1 span{
+    width: 250px;
+    float: left;
+    display: block
+}
+
+#listaCarrinho .produto1 button{
+    width: 250px;
+    float: left;
+    display: block
+}

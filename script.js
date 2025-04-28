@@ -35,6 +35,8 @@ ovos.forEach(ovos =>{
             listagem.appendChild(novaLista);
 });
 
+
+
 const btnAbrirCarrinho = document.getElementById("btnAbrirCarrinho");
 const carrinho = document.getElementById("carrinho");
 const btnFecharCarrinho = document.getElementById("btnFecharCarrinho")
@@ -42,11 +44,31 @@ const btnFecharCarrinho = document.getElementById("btnFecharCarrinho")
 function AbrirCarrinho() {
     carrinho.style.right = "0"
     btnAbrirCarrinho.style.right = "450px"
+    const listaCarrinho = document.getElementById('listaCarrinho');
+    let contador = 0;
+    ovos.forEach(ovos =>{
+        const novaLista = document.createElement("li");
+        novaLista.classList.add("produto1");
+        
+        novaLista.innerHTML =`
+                <img src="${ovos.imagem}" alt="">
+                <p>${ovos.nome}</p>
+                <span>R$ ${ovos.preco.toFixed(2)}</span>
+                <button class="remover" onclick="adicionar(${contador});">remover</button>`;
+                listaCarrinho.appendChild(novaLista);
+        contador++;
+    });
 }
 function FecharCarrinho() {
     carrinho.style.right = "-450px"
     btnAbrirCarrinho.style.right = "0"
 }
 
+
+
+    
+
 btnAbrirCarrinho.addEventListener('click', AbrirCarrinho)
 btnFecharCarrinho.addEventListener('click', FecharCarrinho)
+
+
